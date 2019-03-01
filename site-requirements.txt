@@ -1,0 +1,214 @@
+I don't know what level of knowledge you have on web or server hosting topics, so I'm gonna phrase
+these as if you have basically literally 0 understanding of how these things work. Promise I'm not
+trying to be a dick.
+
+
+Gonna need to know your current situation:
+
+    Q - Do you already have any sort of server administrator or 'IT guy'?
+    A - 
+
+    Q - You already have a site, who built it for you? Are they in charge of
+          keeping the site maintained?
+    A - 
+
+    Q - Do you know where or how the site is already being hosted? What's your
+          current setup like?
+    A - 
+
+
+Your expectations, requirements:
+
+    A website is just some files being accessible at a URL for a web browser
+      to interact with. The URL in essence gets pointed to an IP address of a
+      server connected to the internet, which is where the files for your
+      website actually are.
+    This is server administration and is the most commonly preferred method to
+      provide a website, but there are other methods. Namely, using a service or
+      tool that virtualizes all ^ that ^ for you. Preferable to non-techy people.
+    The person that develops the site's files only needs to create those
+      files and put them in whatever kind of bucket the service would provide
+      and not have to manage the other aspects included in running a web server
+      like protection from hackers, getting DNS configured ( how the whole
+      'URL >> IP address thing' works ), managing the code environment,
+      keeping the server and the website from going down, etc etc ). I've
+      never used one of these services, all my stuff has been managed by
+      myself, but I highly doubt I couldn't get it working.
+
+    Q - Which ^ scenario ^ fits with what you need? Are you needing someone to
+          deploy and manage a server for your site to be hosted on? Or someone
+          to create the site's content and whatever services you're needing, not
+          having to screw with a dedicated server?
+    A - 
+
+    Q - What is it that you want built? Example: some sort of bio or 'About Me'
+          page that is also tied to a storefront that would need to also be
+          attached to a payment processor for online purchases or somewhere a
+          product's price can be displayed for in-store purchases, etc etc.
+    A - 
+
+    Q - Is there a deadline for this?
+    A - 
+
+    Q - Do you expect me to provide ongoing support for the site or just need
+          some functionalities and I'd be hands off? I can build something but
+          can't promise availability for something like that ( work, family,
+          life stuff ) and would require some sort of payment if that's the case.
+    A - 
+
+    Q - Do you have any examples of styles you'd like or a website that you think
+          looks and behaves better than others?
+
+    Q - Why are you looking to re-create your site?
+    A - 
+
+    Q - What services do you want your website to provide?
+    A - 
+
+
+After answering all this, keep in mind - everything needs to be built.
+
+That means the content, pictures, text that pops up when someone goes to your
+website. When you go to a different section of your website, the functionality to
+get to that other section needs to be built. That section needs to be built, its
+content, pictures, text. Same thing with every other section.
+
+
+fauxcillashstudio >> fauxcil
+
+- migrate from godaddy to wix
+- shut down the wix 'lashstudio' domain
+- point the migrated domain to the site
+- 
+- social media: update all references to correct page
+
+
+
+
+/*----------  user site data  ----------*/
+** go daddy, volustion: webstore **
+https://www.fauxcil.com/?fbclid=IwAR3G-yWFvEXEDgHgXi_1erBsBZj-WtEkam56aUqwsb8Z0D6fx-VnHRTdF6E
+
+** main salon page **
+https://www.fauxcillashstudio.com
+https://www.facebook.com/pages/Faux-Cil-Lash-Beauty-Bar/430692230617316
+https://www.yelp.com/biz/faux-cil-lash-studio-arlington
+
+from facebook: http://www.fauxcillashroom.wix.com/beauty
+
+** volustion **
+fauxcillashroom@yahoo.com
+Godfrey87
+
+** users.wix.com **
+fauxcillashroom@yahoo.com
+godfrey87
+
+** GoDaddy **
+fauxcillashroom@yahoo.com
+Ellie1128
+
+- invalid yahoo account 
+
+
+
+/*----------  scope of work  ----------*/
+
+- admin
+    - order new server
+    - domain: shut down unused domain
+    - domain: migrate the domain to keep from wix
+    - domain: DNS, point domain at new server
+    - SSL/HTTPS
+    - maintanence
+    - patching
+- landing page
+- chair rental/leasing for new employees
+- web store
+    - secure payment processor
+    - shipping
+    - receipt/log management
+    - dashboard for product/price management
+
+
+
+
+
+
+I want you to be able to be more comfortable with this stuff in the future, so,
+on stuff that isn't very advanced, I'm going to document what I would do and have
+you go in and do it. I'll still help you, but I want to make sure you have some
+degree of knowledge about this, because it *is* your business.
+
+
+
+
+
+Change 'assigned to' https://www.wix.com/dashboard/cc1af8c7-d110-4380-8fd7-b0f45ad01749/manage-website/plans?referralInfo=sidebar
+
+and 'site name' https://www.wix.com/dashboard/cc1af8c7-d110-4380-8fd7-b0f45ad01749/manage-website/overview
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------  To Do  ----------*/
+
+- seo
+    https://www.checkbot.io/
+    - 301 redirect to new site
+    - anchor text for links
+        ( <a href="www.site.com">This is the Anchor Text</a>)
+    - https://www.clickminded.com/seo-checklist/
+    - meta tags
+        <meta name=”description” content=”Search the world’s information,
+        including web pages, images, videos and more. Google has many special
+        features to help you find exactly what you’re looking for.“>
+    - sitemap
+        > https://www.xml-sitemaps.com/
+        > By placing a formatted xml file with site map on your webserver, you
+        > enable Search Engine crawlers (like Google) to find out what pages
+        > are present and which have recently changed, and to crawl your
+        > site accordingly.
+        > A sitemap is a way of organizing a website, identifying the URLs and
+        > the data under each section.
+        >
+        >  Sitemap file is located at http://www.example.com/sitemap.xml
+    - robots.txt
+        > https://www.npmjs.com/package/express-robots-txt
+        > app.use(robots(__dirname + '/robots.txt'));
+        >
+        > https://support.google.com/webmasters/answer/6062596?hl=en
+        > robots.txt file consists of one or more rules. Each rule blocks (or or
+        > allows) access for a given crawler to a specified file path in that website.
+        >
+        > https://moz.com/learn/seo/robotstxt
+        > User-agent: [user-agent name]
+        > Disallow: [URL string not to be crawled]
+        > Sitemap: https://www.example.com/sitemap.xml
+        >
+        > In a robots.txt file with multiple user-agent directives, each disallow
+        > or allow rule only applies to the useragent(s) specified in that particular
+        > line break-separated set. If the file contains a rule that applies to more
+        > than one user-agent, a crawler will only pay attention to (and follow the
+        > directives in) the most specific group of instructions.
+
+- copyright
+    >  Copyright 2019 © Moz, Inc. All rights reserved.
+
+
+
+
+
+
