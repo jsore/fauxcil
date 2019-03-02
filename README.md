@@ -33,9 +33,10 @@ Documenting the overhaul of the Salon's site, fauxcil.com
 - [ ] Set all pages to cache their content
 
 <b>Wix - Construction Page</b>
-- [ ] Set as default ( home ), redirect all others here
-- [ ] Hide navigation for sub-pages
-- [ ] Password protect access to all other pages
-- [ ] Include contact info
-- [ ] Link to Facebook for alternative contact
-- [ ] Implement minor SEO improvements
+- [x] Set as default ( home ), redirect all others here
+- [x] Hide navigation for sub-pages
+- [x] Password protect access to all other pages
+- [x] Include contact info
+- [x] Link to Facebook for alternative contact
+- [x] Implement minor SEO improvements
+Replace fauxcillashstudio.com and all subpages with splashpage
