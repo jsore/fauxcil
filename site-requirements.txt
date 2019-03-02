@@ -85,30 +85,7 @@ fauxcillashstudio >> fauxcil
 
 
 
-/*----------  user site data  ----------*/
-** go daddy, volustion: webstore **
-https://www.fauxcil.com/?fbclid=IwAR3G-yWFvEXEDgHgXi_1erBsBZj-WtEkam56aUqwsb8Z0D6fx-VnHRTdF6E
 
-** main salon page **
-https://www.fauxcillashstudio.com
-https://www.facebook.com/pages/Faux-Cil-Lash-Beauty-Bar/430692230617316
-https://www.yelp.com/biz/faux-cil-lash-studio-arlington
-
-from facebook: http://www.fauxcillashroom.wix.com/beauty
-
-** volustion **
-fauxcillashroom@yahoo.com
-Godfrey87
-
-** users.wix.com **
-fauxcillashroom@yahoo.com
-godfrey87
-
-** GoDaddy **
-fauxcillashroom@yahoo.com
-Ellie1128
-
-- invalid yahoo account 
 
 
 
@@ -141,18 +118,33 @@ you go in and do it. I'll still help you, but I want to make sure you have some
 degree of knowledge about this, because it *is* your business.
 
 
+- descriptions need to be added for each page, titles nee
+
+
+- The site's name needs to be changed. ( see screenshot from today )
+Change 'assigned to'
+https://www.wix.com/dashboard/cc1af8c7-d110-4380-8fd7-b0f45ad01749/
+manage-website/plans?referralInfo=sidebar
+and 'site name' https://www.wix.com/dashboard/
+cc1af8c7-d110-4380-8fd7-b0f45ad01749/manage-website/overview
 
 
 
-Change 'assigned to' https://www.wix.com/dashboard/cc1af8c7-d110-4380-8fd7-b0f45ad01749/manage-website/plans?referralInfo=sidebar
-
-and 'site name' https://www.wix.com/dashboard/cc1af8c7-d110-4380-8fd7-b0f45ad01749/manage-website/overview
-
+is it "Fauxcil" or "Faux Cil"?
+https://admin.volusion.com/settings/detail
 
 
+option for salon proper vs the people leasing the spaces
+- subdomains for each person
+- additional subdomain for the products
 
 
 
+two options for the domain
+- keep fauxcil.com registered with GoDaddy, point DNS to Wix NS
+    - A record for fauxcil.com >> 23.236.62.147 
+    - Cname record for www.fauxcil.com >> www99.wixdns.net
+- migrate off godaddy completely
 
 
 
