@@ -39,4 +39,4 @@ Documenting the overhaul of the Salon's site, fauxcil.com
 - [x] Include contact info
 - [x] Link to Facebook for alternative contact
 - [x] Implement minor SEO improvements
-Replace fauxcillashstudio.com and all subpages with splashpage
+- [x] Replace fauxcillashstudio.com and all subpages with splashpage
