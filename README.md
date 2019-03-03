@@ -2,8 +2,6 @@
 
 Documenting the overhaul of the Salon's website
 
-<br>
-
 ### The Scenario
 
 - There's two main domains related to the salon, Fauxcil
@@ -73,9 +71,13 @@ Documenting the overhaul of the Salon's website
     > ns7.wixdns.net @ 216.239.34.100
     > ```
 
+<br>
+
 <b>Volusion</b>
 - [ ] Export customer order records
 - [ ] Retire account
+
+<br>
 
 <b>Wix</b>
 - [ ] Set DNS for `fauxcil.com`
@@ -84,6 +86,13 @@ Documenting the overhaul of the Salon's website
     - [ ] Update MX records for `fauxcil.com`
 - [ ] 301 redirect `fauxcillashstudio.com` to `fauxcil.com`
 - [ ] Redisgn the site
+    - [ ] Homepage
+    - [ ] About us
+    - [ ] Contact us
+    - [ ] Services
+    - [ ] Gallery
+    - [ ] Training
+    - [ ] Leasing
     - [ ] Update the site's Title ( should be `Fauxcil` not `beauty` )
     - [ ] Set all pages to cache their content
     - [ ] SEO: Titles, descriptions ( meta tags ) need to be filled out for all pages
@@ -95,6 +104,8 @@ Documenting the overhaul of the Salon's website
     - [ ] Design layout
     - [ ] Confirm payment processer ( Square ) is connected and working
 
+<br>
+
 <b>Wix - Construction Page</b>
 - [x] Set as default ( home ), redirect all others here
 - [x] Hide navigation for sub-pages
@@ -104,6 +115,8 @@ Documenting the overhaul of the Salon's website
 - [x] Implement minor SEO improvements
 - [x] Redirect `fauxcillashstudio.com` and all subpages to this page
 
+<br>
+
 <b>Google</b>
 - [ ] Confirm ownership of the website in the Search Console
     - ( https://support.google.com/webmasters/answer/9008080 )
@@ -111,6 +124,8 @@ Documenting the overhaul of the Salon's website
 - [ ] Add Fauxcil property to Google Search Console
     - ( https://support.google.com/webmasters/answer/34592 )
 - [ ] Remove `Beleza Salon inside ...` from title of physical property within Google's search results
+
+<br>
 
 <b>Meta</b>
 ```html
