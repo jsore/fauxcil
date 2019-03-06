@@ -144,7 +144,7 @@ Documenting the overhaul of the Salon's website
 
 ### Pending Questions, Recommendations
 
-- Is it "Faux Cil" or "Fauxcil"?
+- ~~Is it "Faux Cil" or "Fauxcil"?~~ It's "Fauxcil"
 
     > Logo, Store Name: https://admin.volusion.com/settings/detail
 
