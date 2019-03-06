@@ -85,6 +85,9 @@ Documenting the overhaul of the Salon's website
     - [ ] Set Wix's NS to be authoritative for `fauxcil.com`
     - [ ] Update MX records for `fauxcil.com`
 - [ ] 301 redirect `fauxcillashstudio.com` to `fauxcil.com`
+- [ ] Logo
+- [ ] Favicon
+- [ ] Optimize background image + Lazy Load
 - [ ] Redisgn the site
     - [ ] Homepage
     - [ ] About us
