@@ -81,10 +81,13 @@ Documenting the overhaul of the Salon's website
 
 <b>Wix</b>
 - [ ] Set DNS for `fauxcil.com`
+    - [ ] Propagation checks: `dig fauxcil.com -t ns`, `dig fauxcil.com +nssearch`
     - [ ] Add `fauxcil.com` to the domain list
     - [ ] Set Wix's NS to be authoritative for `fauxcil.com`
     - [ ] Update MX records for `fauxcil.com`
-- [ ] 301 redirect `fauxcillashstudio.com` to `fauxcil.com`
+- [ ] 301 redirects
+    - [ ] `fauxcillashstudio.com` to `fauxcil.com`
+    - [ ] subpages for old domain to `fauxcil.com`
 - [ ] Logo
 - [ ] Favicon
 - [ ] Optimize background image + Lazy Load
