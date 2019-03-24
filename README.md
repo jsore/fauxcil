@@ -82,9 +82,12 @@ Documenting the overhaul of the Salon's website
 <b>Wix</b>
 - [ ] Set DNS for `fauxcil.com`
     - [ ] Propagation checks: `dig fauxcil.com -t ns`, `dig fauxcil.com +nssearch`
-    - [ ] Add `fauxcil.com` to the domain list
-    - [ ] Set Wix's NS to be authoritative for `fauxcil.com`
-    - [ ] Update MX records for `fauxcil.com`
+    - [x] Strip `fauxcil.com` from Volusion account
+    - [x] Add `fauxcil.com` to the Wix domain list
+    - [x] Set Wix's NS to be authoritative for `fauxcil.com`
+    - [ ] Update MX and remaining records for `fauxcil.com`
+- [ ] ~~Rebuild site with proper name, details~~ New site costs money
+- [ ] Assign `fauxcil.com` as main domain for new site
 - [ ] 301 redirects
     - [ ] `fauxcillashstudio.com` to `fauxcil.com`
     - [ ] subpages for old domain to `fauxcil.com`
