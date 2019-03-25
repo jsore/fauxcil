@@ -62,6 +62,61 @@ Documenting the overhaul of the Salon's website
 
 ### The Changes
 
+<b>Some helper JavaScript</b>
+
+Module to manually redirect to new domain if Wix doesn't catch the 301 from `fauxcillashstudio`<br>
+( I've seen it happen fairly often )<br>
+`public/wixFunctions.js`<br>
+```javascript
+/** Wix module */
+import wixLocation from 'wix-location';
+
+/** I want the host of the request */
+let baseUrl = wixLocation.baseUrl;
+
+const doWork = () => {
+    if (baseUrl === 'https://www.fauxcillashstudio.com') {
+        console.log('Wrong URL, Wix must not have caught the 301. Redirecting...');
+        wixLocation.to('/');
+        let msg = `Had to redirect from ${baseUrl}`;
+        return msg;
+    } else {
+        let msg = `No redirect required, already at ${baseUrl}`;
+        return msg;
+    }
+};
+
+/**
+ * this layer of abstraction just for URL path's probably
+ * isn't necessary, but oh well
+ */
+export let urlSanity = () => {
+    console.log('I hate Wix');
+    return doWork(baseUrl);
+};
+```
+
+<br>
+
+Code shared across entire site<br>
+`github.com/jsore/fauxcil/blob/master/siteCode.js`<br>
+```javascript
+/** because there's so many damn POST failures */
+let arbitrarySeparator = '- - - - - - - -  user code  - - - - - - - -';
+console.log(`${arbitrarySeparator}`);
+
+console.log('begin importing imports...');
+
+/** runs and redirects if required */
+import {urlSanity} from 'public/wixFunctions.js';
+
+/** log the results */
+console.log(urlSanity());
+
+console.log(`${arbitrarySeparator}`);
+```
+
+
 <b>GoDaddy</b>
 - [ ] Point DNS to Wix NS ( Note: not transfer, just point )
 
