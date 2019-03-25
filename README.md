@@ -87,9 +87,9 @@ Documenting the overhaul of the Salon's website
     - [x] Set Wix's NS to be authoritative for `fauxcil.com`
     - [ ] Update MX and remaining records for `fauxcil.com`
 - [ ] ~~Rebuild site with proper name, details~~ New site costs money
-- [ ] Assign `fauxcil.com` as main domain for new site
+- [x] Assign `fauxcil.com` as main domain for new site
 - [ ] 301 redirects
-    - [ ] `fauxcillashstudio.com` to `fauxcil.com`
+    - [x] `fauxcillashstudio.com` to `fauxcil.com`
     - [ ] subpages for old domain to `fauxcil.com`
 - [ ] Logo
 - [ ] Favicon
