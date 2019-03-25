@@ -116,8 +116,9 @@ console.log(urlSanity());
 console.log(`${arbitrarySeparator}`);
 ```
 
+<br>
 
-<b>GoDaddy</b>
+<b>GoDaddy TODO's</b>
 - [ ] Point DNS to Wix NS ( Note: not transfer, just point )
 
     > ```
@@ -128,13 +129,13 @@ console.log(`${arbitrarySeparator}`);
 
 <br>
 
-<b>Volusion</b>
+<b>Volusion TODO's</b>
 - [ ] Export customer order records
 - [ ] Retire account
 
 <br>
 
-<b>Wix</b>
+<b>Wix TODO's</b>
 - [ ] Set DNS for `fauxcil.com`
     - [x] Propagation checks: `dig fauxcil.com -t ns`, `dig fauxcil.com +nssearch`
     - [x] Strip `fauxcil.com` from Volusion account
@@ -170,7 +171,7 @@ console.log(`${arbitrarySeparator}`);
 
 <br>
 
-<b>Wix - Construction Page</b>
+<b>Wix - Construction Page TODO's</b>
 - [x] Set as default ( home ), redirect all others here
 - [x] Hide navigation for sub-pages
 - [x] Password protect access to all other pages
@@ -181,7 +182,7 @@ console.log(`${arbitrarySeparator}`);
 
 <br>
 
-<b>Google</b>
+<b>Google TODO's</b>
 - [ ] Confirm ownership of the website in the Search Console
     - ( https://support.google.com/webmasters/answer/9008080 )
 - [ ] Prove ownership of the property
@@ -191,7 +192,7 @@ console.log(`${arbitrarySeparator}`);
 
 <br>
 
-<b>Meta</b>
+<b>Meta TODO's</b>
 ```html
 /** don't show Google's custom search for this domain */
 <meta name="google" content="nositelinkssearchbox" />
