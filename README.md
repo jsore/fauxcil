@@ -81,7 +81,7 @@ Documenting the overhaul of the Salon's website
 
 <b>Wix</b>
 - [ ] Set DNS for `fauxcil.com`
-    - [ ] Propagation checks: `dig fauxcil.com -t ns`, `dig fauxcil.com +nssearch`
+    - [x] Propagation checks: `dig fauxcil.com -t ns`, `dig fauxcil.com +nssearch`
     - [x] Strip `fauxcil.com` from Volusion account
     - [x] Add `fauxcil.com` to the Wix domain list
     - [x] Set Wix's NS to be authoritative for `fauxcil.com`
