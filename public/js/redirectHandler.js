@@ -13,10 +13,12 @@ let baseUrl = wixLocation.baseUrl;
 
 const doWork = () => {
     if (baseUrl === 'https://www.fauxcillashstudio.com') {
-        console.log('Wrong URL, Wix must not have caught the 301. Redirecting...');
-        wixLocation.to('/');
-        let msg = `Had to redirect from ${baseUrl}`;
-        return msg;
+        try {
+            console.log('Opps, Wix didn\'t handle the 301. Redirecting...');
+            wixLocation.to('/');
+            let msg = `Had to redirect from ${baseUrl}`;
+            return msg;
+        } catch (e) { console.log(e); }
     } else {
         let msg = `No redirect required, already at ${baseUrl}`;
         return msg;
