@@ -132,8 +132,9 @@ Documenting the overhaul of the Salon's website
 <br>
 
 <b>Volusion TODO's</b>
-- [ ] Export customer order records
-- [ ] Retire account
+- [x] Export customer order records
+- [x] Export payment records for Volusion account
+- [ ] Retire account ( `My Account >> dot menu top right >> Cancel My Store )
 
 <br>
 
