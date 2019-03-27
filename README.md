@@ -64,7 +64,7 @@ Documenting the overhaul of the Salon's website
 
 <b>JavaScript - manual redirect module</b> `public/wixFunctions.js`
 
-Wix isn't catching every 301 for `fauxcillashstudio` often enough that it needs
+Wix isn't catching every 301 for `fauxcillashstudio.com` often enough that it needs
 to be addressed
 
 ```javascript
@@ -126,22 +126,63 @@ Wix supports a handful of npm packages in its environment ( Wix is Node.js based
 
 https://www.wix.com/code/reference/npm-modules.html
 
-    ```
-    validator @ 9.4.0
+```javascript
+// Site Editor >> Backend >> ( gear wheel ) >> Install Node Package
 
-    string validation and sanitation
+// import per module's docs
+import example from 'example';
+
+export function getAnExample() {
+    return example.functions.findExample();
+}
+```
+
+
+    validator ( 9.4.0 ): string validation and sanitation
 
         - base snippets: https://www.npmjs.com/package/validator
-    ```
 
-    ```
-    square-connect @ 2.20190213.0
 
-    connect to Square's API ( funky ass version numbers though )
+
+    square-connect ( 2.20190213.0 ): connect to Square's API
 
         - base snippets: https://www.npmjs.com/package/square-connect
         - API Documents: https://docs.connect.squareup.com/
-    ```
+
+
+
+    paypal-checkout ( 4.0.202 ): simple PayPal integration
+
+        - base snippets: https://www.npmjs.com/package/paypal-checkout
+        - API documents: https://developer.paypal.com/
+
+
+
+    passport ( 0.4.0 ): user authentication
+
+        - base snippets: https://www.npmjs.com/package/passport
+        - API documents: http://www.passportjs.org/docs/
+        - better API docs: https://github.com/jwalton/passport-api-docs
+
+
+
+    handlebars ( 4.0.11 ): templating language for separating views from code
+
+        - base snippets: https://www.npmjs.com/package/handlebars
+        - API documents: http://handlebarsjs.com/
+
+
+
+    mysql ( 2.15.0, 2.11.1 ): db schema
+
+        - base snippets: https://www.npmjs.com/package/mysql
+
+
+
+    request ( 2.83.0 ): simple HTTP/HTTPS calls
+
+        - base snippets: https://www.npmjs.com/package/request
+
 
 
 <br>
