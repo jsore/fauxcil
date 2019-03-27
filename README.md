@@ -62,89 +62,87 @@ Documenting the overhaul of the Salon's website
 
 ### The Changes
 
-<b>Some JavaScript - manual redirect module</b> `public/wixFunctions.js`<br>
+<b>JavaScript - manual redirect module</b> `public/wixFunctions.js`
+
 Wix isn't catching every 301 for `fauxcillashstudio` often enough that it needs
 to be addressed
 
-    ```javascript
-    /** Wix module */
-    import wixLocation from 'wix-location';
+```javascript
+/** Wix module */
+import wixLocation from 'wix-location';
 
-    /** I want the host of the request */
-    let baseUrl = wixLocation.baseUrl;
+/** I want the host of the request */
+let baseUrl = wixLocation.baseUrl;
 
-    const doWork = () => {
-        if (baseUrl === 'https://www.fauxcillashstudio.com') {
-            console.log('Wrong URL, Wix must not have caught the 301. Redirecting...');
-            wixLocation.to('/');
-            let msg = `Had to redirect from ${baseUrl}`;
-            return msg;
-        } else {
-            let msg = `No redirect required, already at ${baseUrl}`;
-            return msg;
-        }
-    };
+const doWork = () => {
+    if (baseUrl === 'https://www.fauxcillashstudio.com') {
+        console.log('Wrong URL, Wix must not have caught the 301. Redirecting...');
+        wixLocation.to('/');
+        let msg = `Had to redirect from ${baseUrl}`;
+        return msg;
+    } else {
+        let msg = `No redirect required, already at ${baseUrl}`;
+        return msg;
+    }
+};
 
-    /**
-     * this layer of abstraction just for URL path's probably
-     * isn't necessary, but oh well
-     */
-    export let urlSanity = () => {
-        console.log('I hate Wix');
-        return doWork(baseUrl);
-    };
-    ```
+/**
+ * this layer of abstraction just for URL paths probably
+ * isn't necessary, but oh well
+ */
+export let urlSanity = () => {
+    console.log('I hate Wix');
+    return doWork(baseUrl);
+};
+```
 
 <br>
 
-<b>Some JavaScript - code shared site-wide</b>
+<b>JavaScript - global code</b> `github.com/.../fauxcil/public/js/siteCode.js`
 
-    `github.com/jsore/fauxcil/blob/master/siteCode.js`<br>
-    ```javascript
-    /** because there's so many damn POST failures */
-    let arbitrarySeparator = '- - - - - - - -  user code  - - - - - - - -';
-    console.log(`${arbitrarySeparator}`);
+Everything here will reach all site pages and `public/` files
 
-    console.log('begin importing imports...');
+```javascript
+/** because there's so many damn POST failures */
+let arbitrarySeparator = '- - - - - - - -  user code  - - - - - - - -';
+console.log(`${arbitrarySeparator}`);
 
-    /** runs and redirects if required */
-    import {urlSanity} from 'public/wixFunctions.js';
+console.log('begin importing imports...');
 
-    /** log the results */
-    console.log(urlSanity());
+/** runs and redirects if required */
+import {urlSanity} from 'public/wixFunctions.js';
 
-    console.log(`${arbitrarySeparator}`);
-    ```
+/** log the results */
+console.log(urlSanity());
+
+console.log(`${arbitrarySeparator}`);
+```
 
 <br>
 
 <b>Some npm modules I might want to use</b>
 
-    Wix supports a handful of npm packages in its environment ( Wix is Node.js based? ):
+Wix supports a handful of npm packages in its environment ( Wix is Node.js based? ):
 
-    https://www.wix.com/code/reference/npm-modules.html
+https://www.wix.com/code/reference/npm-modules.html
 
     ```
     validator @ 9.4.0
+
     string validation and sanitation
 
         - base snippets: https://www.npmjs.com/package/validator
     ```
+
     ```
     square-connect @ 2.20190213.0
+
     connect to Square's API ( funky ass version numbers though )
 
         - base snippets: https://www.npmjs.com/package/square-connect
         - API Documents: https://docs.connect.squareup.com/
     ```
 
-
-    `square-connect`
-
-    > B
-    > A
-
-    
 
 <br>
 
