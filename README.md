@@ -62,9 +62,9 @@ Documenting the overhaul of the Salon's website
 
 ### The Changes
 
-<b>Some helper JavaScript</b>
+<b>Some JavaScript - manual redirect module</b>
 
-- Module to manually redirect to new domain if Wix doesn't catch the 301 from `fauxcillashstudio`
+    Wix isn't catching every 301 for `fauxcillashstudio`, fix that here
 
     ( I've seen it happen fairly often )<br>
     `public/wixFunctions.js`<br>
@@ -99,7 +99,7 @@ Documenting the overhaul of the Salon's website
 
 <br>
 
-- Code shared across entire site
+<b>Some JavaScript - code shared site-wide</b>
 
     `github.com/jsore/fauxcil/blob/master/siteCode.js`<br>
     ```javascript
@@ -117,6 +117,36 @@ Documenting the overhaul of the Salon's website
 
     console.log(`${arbitrarySeparator}`);
     ```
+
+<br>
+
+<b>Some npm modules I might want to use</b>
+
+    Wix supports a handful of npm packages in its environment ( Wix is Node.js based? ):
+
+    https://www.wix.com/code/reference/npm-modules.html
+
+    ```
+    validator @ 9.4.0
+    string validation and sanitation
+
+        - base snippets: https://www.npmjs.com/package/validator
+    ```
+    ```
+    square-connect @ 2.20190213.0
+    connect to Square's API ( funky ass version numbers though )
+
+        - base snippets: https://www.npmjs.com/package/square-connect
+        - API Documents: https://docs.connect.squareup.com/
+    ```
+
+
+    `square-connect`
+
+    > B
+    > A
+
+    
 
 <br>
 
@@ -150,7 +180,7 @@ Documenting the overhaul of the Salon's website
 - [ ] 301 redirects
     - [x] `fauxcillashstudio.com` to `fauxcil.com`
     - [ ] subpages for old domain to `fauxcil.com`
-- [ ] Logo
+- [x] Logo
 - [ ] Favicon
 - [ ] Optimize background image + Lazy Load
 - [ ] Redisgn the site
@@ -208,6 +238,8 @@ Documenting the overhaul of the Salon's website
 <br>
 
 ### Pending Questions, Recommendations
+
+- Bug: Media share previews are still showing old data after fauxcil DNS update
 
 - ~~Is it "Faux Cil" or "Fauxcil"?~~ It's "Fauxcil"
 
