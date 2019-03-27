@@ -62,12 +62,10 @@ Documenting the overhaul of the Salon's website
 
 ### The Changes
 
-<b>Some JavaScript - manual redirect module</b>
+<b>Some JavaScript - manual redirect module</b> `public/wixFunctions.js`<br>
+Wix isn't catching every 301 for `fauxcillashstudio` often enough that it needs
+to be addressed
 
-    Wix isn't catching every 301 for `fauxcillashstudio`, fix that here
-
-    ( I've seen it happen fairly often )<br>
-    `public/wixFunctions.js`<br>
     ```javascript
     /** Wix module */
     import wixLocation from 'wix-location';
