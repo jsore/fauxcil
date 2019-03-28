@@ -62,7 +62,17 @@ Documenting the overhaul of the Salon's website
 
 ### The Changes
 
-<b>JavaScript - manual redirect module</b> `public/wixFunctions.js`
+Wix apparently provides solutions ( hacks ) to inject JS into the site you
+template with them.
+
+A lot of the code I'll be writing relies on their API's or, because Wix and its
+engine is apparently Node.js based, `import` statements for the npm modules they support.
+
+I can **not** attest to the reliability of their modules or npm compatibility at this time.
+
+<br>
+
+<b>Manual redirect module</b> `public/wixFunctions.js`
 
 Wix isn't catching every 301 for `fauxcillashstudio.com` often enough that it needs
 to be addressed
@@ -98,35 +108,32 @@ export let urlSanity = () => {
 
 <br>
 
-<b>JavaScript - global code</b> `github.com/.../fauxcil/public/js/siteCode.js`
+<b>Site-wide globally scoped code</b> `github.com/.../fauxcil/public/js/siteCode.js`
 
 Everything here will reach all site pages and `public/` files
 
 ```javascript
-/** because there's so many damn POST failures */
+/** because there's so many damn POST failures on page load... */
 let arbitrarySeparator = '- - - - - - - -  user code  - - - - - - - -';
-console.log(`${arbitrarySeparator}`);
 
+console.log(`${arbitrarySeparator}`);
 console.log('begin importing imports...');
 
-/** runs and redirects if required */
+/** calls urlSanity export and redirects if required */
 import {urlSanity} from 'public/wixFunctions.js';
 
 /** log the results */
 console.log(urlSanity());
-
 console.log(`${arbitrarySeparator}`);
 ```
 
 <br>
 
-<b>Some npm modules I might want to use</b>
-
-Wix supports a handful of npm packages in its environment ( Wix is Node.js based? ):
-
-https://www.wix.com/code/reference/npm-modules.html
+<b>Some npm modules I ( might ) want to use</b>
 
 ```javascript
+// https://www.wix.com/code/reference/npm-modules.html
+
 // Site Editor >> Backend >> ( gear wheel ) >> Install Node Package
 
 // import per module's docs
@@ -137,53 +144,115 @@ export function getAnExample() {
 }
 ```
 
+<br>
 
-    validator ( 9.4.0 ): string validation and sanitation
+A note to self regarding ANYTHING related to payment processing for the site's store:
 
+> The Payment Card Industry (PCI) Council has mandated that early versions
+> of TLS be retired from service. All organizations that handle credit card
+> information are required to comply with this standard.
+>
+> - For HTTPS, TLS 1.2 connections are required.
+>
+> - For HTTP, HTTP/1.1 should be the minimun for all connections.
+
+<br>
+
+
+    validator ( 9.4.0 )
+
+        - string validation and sanitation
         - base snippets: https://www.npmjs.com/package/validator
 
 
 
-    square-connect ( 2.20190213.0 ): connect to Square's API
+    square-connect ( 2.20190213.0 )
 
+        - connect to Square's API
         - base snippets: https://www.npmjs.com/package/square-connect
         - API Documents: https://docs.connect.squareup.com/
 
 
 
-    paypal-checkout ( 4.0.202 ): simple PayPal integration
+    paypal-checkout ( 4.0.202 )
 
+        - simple PayPal integration
         - base snippets: https://www.npmjs.com/package/paypal-checkout
         - API documents: https://developer.paypal.com/
 
 
 
-    passport ( 0.4.0 ): user authentication
+    passport ( 0.4.0 )
 
+        - user authentication
         - base snippets: https://www.npmjs.com/package/passport
         - API documents: http://www.passportjs.org/docs/
         - better API docs: https://github.com/jwalton/passport-api-docs
 
 
 
-    handlebars ( 4.0.11 ): templating language for separating views from code
+    handlebars ( 4.0.11 )
 
+        - templating language for separating views from code
         - base snippets: https://www.npmjs.com/package/handlebars
         - API documents: http://handlebarsjs.com/
 
 
 
-    mysql ( 2.15.0, 2.11.1 ): db schema
+    mysql ( 2.15.0, 2.11.1 )
 
+        - db schema
         - base snippets: https://www.npmjs.com/package/mysql
 
 
 
-    request ( 2.83.0 ): simple HTTP/HTTPS calls
+    request ( 2.83.0 )
 
+        - simple HTTP/HTTPS calls
         - base snippets: https://www.npmjs.com/package/request
 
 
+
+    request-promise ( 4.2.2 )
+
+        - HTTP request + support for Promises ( adds .then(...) support )
+        - base snippets: https://www.npmjs.com/package/request-promise
+
+
+
+    body-parser ( 1.18.3 ) [this is a very hard maybe]
+
+        - base snippets: https://www.npmjs.com/package/body-parser
+
+
+
+    node-oauth ( 0.9.15 )
+
+        - User authentication for providers that use OAuth ( 2.0 )
+        - base snippets: https://www.npmjs.com/package/oauth
+        - API documents: https://oauth.net/articles/authentication/
+        - https://en.wikipedia.org/wiki/List_of_OAuth_providers
+
+        - base snippets:
+        - API documents:
+
+        - base snippets:
+        - API documents:
+
+        - base snippets:
+        - API documents:
+
+        - base snippets:
+        - API documents:
+
+        - base snippets:
+        - API documents:
+
+        - base snippets:
+        - API documents:
+
+        - base snippets:
+        - API documents:
 
 <br>
 
