@@ -1,8 +1,8 @@
-### Problem Tracker For fauxcil.com
+# Problem Tracker For fauxcil.com
 
 Documenting the overhaul of the Salon's website
 
-### The Scenario
+## The Scenario
 
 - There's two main domains related to the salon, Fauxcil
 
@@ -60,7 +60,7 @@ Documenting the overhaul of the Salon's website
 
 <br>
 
-### The Changes
+## The Changes
 
 Wix apparently provides solutions ( hacks ) to inject JS into the site you
 template with them.
@@ -72,10 +72,12 @@ I can **not** attest to the reliability of their modules or npm compatibility at
 
 <br>
 
-<b>Manual redirect module</b> `public/wixFunctions.js`
+### Manual redirect module
 
-Wix isn't catching every 301 for `fauxcillashstudio.com` often enough that it needs
-to be addressed
+`public/wixFunctions.js`
+
+Wix isn't catching every `301 Redirect` for `fauxcillashstudio.com` often enough
+that it needs to be addressed
 
 ```javascript
 /** Wix module */
@@ -108,7 +110,9 @@ export let urlSanity = () => {
 
 <br>
 
-<b>Site-wide globally scoped code</b> `github.com/.../fauxcil/public/js/siteCode.js`
+### Site-wide globally scoped code
+
+`github.com/.../fauxcil/public/js/siteCode.js`
 
 Everything here will reach all site pages and `public/` files
 
@@ -129,7 +133,7 @@ console.log(`${arbitrarySeparator}`);
 
 <br>
 
-<b>Some npm modules I ( might ) want to use</b>
+### Some npm modules I ( might ) want to use
 
 ```javascript
 // https://www.wix.com/code/reference/npm-modules.html
@@ -233,30 +237,10 @@ A note to self regarding ANYTHING related to payment processing for the site's s
         - API documents: https://oauth.net/articles/authentication/
         - https://en.wikipedia.org/wiki/List_of_OAuth_providers
 
-        - base snippets:
-        - API documents:
-
-        - base snippets:
-        - API documents:
-
-        - base snippets:
-        - API documents:
-
-        - base snippets:
-        - API documents:
-
-        - base snippets:
-        - API documents:
-
-        - base snippets:
-        - API documents:
-
-        - base snippets:
-        - API documents:
 
 <br>
 
-<b>GoDaddy TODO's</b>
+### GoDaddy TODO's
 - [ ] Point DNS to Wix NS ( Note: not transfer, just point )
 
     > ```
@@ -267,14 +251,14 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 
 <br>
 
-<b>Volusion TODO's</b>
+### Volusion TODO's
 - [x] Export customer order records
 - [x] Export payment records for Volusion account
 - [ ] Retire account ( `My Account >> dot menu top right >> Cancel My Store )
 
 <br>
 
-<b>Wix TODO's</b>
+### Wix TODO's
 - [ ] Set DNS for `fauxcil.com`
     - [x] Propagation checks: `dig fauxcil.com -t ns`, `dig fauxcil.com +nssearch`
     - [x] Strip `fauxcil.com` from Volusion account
@@ -310,7 +294,7 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 
 <br>
 
-<b>Wix - Construction Page TODO's</b>
+### Wix - Construction Page TODO's
 - [x] Set as default ( home ), redirect all others here
 - [x] Hide navigation for sub-pages
 - [x] Password protect access to all other pages
@@ -321,7 +305,7 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 
 <br>
 
-<b>Google TODO's</b>
+### Google TODO's
 - [ ] Confirm ownership of the website in the Search Console
     - ( https://support.google.com/webmasters/answer/9008080 )
 - [ ] Prove ownership of the property
@@ -331,7 +315,7 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 
 <br>
 
-<b>Meta TODO's</b>
+### Meta TODO's
 ```html
 /** don't show Google's custom search for this domain */
 <meta name="google" content="nositelinkssearchbox" />
@@ -343,7 +327,7 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 
 <br>
 
-### Pending Questions, Recommendations
+## Pending Questions, Recommendations
 
 - Bug: Media share previews are still showing old data after fauxcil DNS update
 
