@@ -291,9 +291,6 @@ A note to self regarding ANYTHING related to payment processing for the site's s
     - [ ] Set subdomain for owner's separation concerns ( https://bit.ly/2Ez0RlM )
     - [ ] Design layout
     - [ ] Confirm payment processer ( Square? ) is connected and working
-- [ ] JavaScript
-    - [ ] User authentication for access to store shopping cart, payments
-    - [ ] User authentication training, studio space lease opportunities
 
 <br>
 
@@ -307,6 +304,11 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 - [x] Redirect `fauxcillashstudio.com` and all subpages to this page
 
 <br>
+
+### Development TODO's
+- [ ] npm package research, document possible modules I want to use
+- [ ] User authentication for access to store shopping cart, payments
+- [ ] User authentication training, studio space lease opportunities
 
 ### Google TODO's
 - [ ] Confirm ownership of the website in the Search Console
