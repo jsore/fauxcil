@@ -287,10 +287,13 @@ A note to self regarding ANYTHING related to payment processing for the site's s
     - [ ] SEO: Set logo and Facebook username under `Social Share`
     - [ ] SEO: `sitemap.xml`
     - [ ] Copyright statement
-- [ ] Create webstore for owner's products
+- [ ] Wireframe webstore for owner's products
     - [ ] Set subdomain for owner's separation concerns ( https://bit.ly/2Ez0RlM )
     - [ ] Design layout
-    - [ ] Confirm payment processer ( Square ) is connected and working
+    - [ ] Confirm payment processer ( Square? ) is connected and working
+- [ ] JavaScript
+    - [ ] User authentication for access to store shopping cart, payments
+    - [ ] User authentication training, studio space lease opportunities
 
 <br>
 
