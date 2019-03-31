@@ -241,7 +241,7 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 <br>
 
 ### GoDaddy TODO's
-- [ ] Point DNS to Wix NS ( Note: not transfer, just point )
+- [x] Point DNS to Wix NS ( Note: not transfer, just point )
 
     > ```
     > Wix NS
@@ -254,22 +254,21 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 ### Volusion TODO's
 - [x] Export customer order records
 - [x] Export payment records for Volusion account
-- [ ] Retire account ( `My Account >> dot menu top right >> Cancel My Store )
+- [x] Retire account ( `My Account >> dot menu top right >> Cancel My Store )
 
 <br>
 
 ### Wix TODO's
-- [ ] Set DNS for `fauxcil.com`
+- [x] Set DNS for `fauxcil.com`
     - [x] Propagation checks: `dig fauxcil.com -t ns`, `dig fauxcil.com +nssearch`
     - [x] Strip `fauxcil.com` from Volusion account
     - [x] Add `fauxcil.com` to the Wix domain list
     - [x] Set Wix's NS to be authoritative for `fauxcil.com`
-    - [ ] Update MX and remaining records for `fauxcil.com`
+    - [ ] ~~Update MX and remaining records for `fauxcil.com` ~~ shouldn't be required
 - [ ] ~~Rebuild site with proper name, details~~ New site costs money
 - [x] Assign `fauxcil.com` as main domain for new site
-- [ ] 301 redirects
-    - [x] `fauxcillashstudio.com` to `fauxcil.com`
-    - [ ] subpages for old domain to `fauxcil.com`
+- [x] 301 redirect for `fauxcillashstudio.com` to `fauxcil.com`
+- [ ] 301 redirect for subpages on old wix domain to `fauxcil.com`
 - [x] Logo
 - [ ] Favicon
 - [ ] Optimize background image + Lazy Load
@@ -310,13 +309,22 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 - [ ] User authentication for access to store shopping cart, payments
 - [ ] User authentication training, studio space lease opportunities
 
-### Google TODO's
-- [ ] Confirm ownership of the website in the Search Console
-    - ( https://support.google.com/webmasters/answer/9008080 )
-- [ ] Prove ownership of the property
-- [ ] Add Fauxcil property to Google Search Console
-    - ( https://support.google.com/webmasters/answer/34592 )
-- [ ] Remove `Beleza Salon inside ...` from title of physical property within Google's search results
+### Google & other misc TODO's
+- [ ] Google searches for `fauxcil lash studio`:
+    - [ ] change the media preview from the old logo
+    - [ ] Confirm ownership of the website ( 'property' ) in the Search Console
+        - ( https://support.google.com/webmasters/answer/9008080 )
+    - [ ] Prove ownership of the property
+    - [ ] Add Fauxcil property to Google Search Console
+        - ( https://support.google.com/webmasters/answer/34592 )
+    - [ ] Submit sitemap
+    - [x] Remove `Beleza Salon inside ...` from title of physical property within Google's search results
+    - 
+- [ ] Yelp: update website link from `fauxcillashroom.wix.com/beauty`
+    - https://www.yelp.com/biz/faux-cil-lash-studio-arlington
+- [ ] Facebook: shut down the Legacy Salons page
+    - https://www.facebook.com/pages/Faux-Cil-Lash-Beauty-Bar/430692230617316
+
 
 <br>
 
