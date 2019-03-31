@@ -135,18 +135,20 @@ console.log(`${arbitrarySeparator}`);
 
 ### Some npm modules I ( might ) want to use
 
-```javascript
-// https://www.wix.com/code/reference/npm-modules.html
+Just bring these in with `import` statements:
 
-// Site Editor >> Backend >> ( gear wheel ) >> Install Node Package
-
-// import per module's docs
-import example from 'example';
-
-export function getAnExample() {
-    return example.functions.findExample();
-}
-```
+> ```javascript
+> // https://www.wix.com/code/reference/npm-modules.html
+> 
+> // Site Editor >> Backend >> ( gear wheel ) >> Install Node Package
+> 
+> // import per module's docs
+> import example from 'example';
+> 
+> export function getAnExample() {
+>     return example.functions.findExample();
+> }
+> ```
 
 <br>
 
@@ -162,6 +164,46 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 
 <br>
 
+    /*----------  top contenders  ----------*/
+
+    total.js ( 3.0.0 )
+
+        - JS framework that includes a ton of modules
+        - home: https://github.com/totaljs/framework
+        - available modules: https://github.com/totaljs/modules
+        - snippets: https://github.com/totaljs/examples
+
+
+
+    passport ( 0.4.0 )
+
+        - user authentication
+        - base snippets: https://www.npmjs.com/package/passport
+        - API documents: http://www.passportjs.org/docs/
+        - better API docs: https://github.com/jwalton/passport-api-docs
+
+
+
+    form-data ( 2.3.2 )
+
+        - create `multipart/form-data` streams for form submissions to other web apps
+        - base snippets: https://www.npmjs.com/package/form-data
+
+
+
+    axios ( 0.18.0 )
+
+        - HTTP client ( `GET/POST` and `XMLHttpRequests` ) with auto JSON transformation
+        - base snippets: https://www.npmjs.com/package/axios
+
+
+
+    /*----------  others that are interesting  ----------*/
+
+    fontkit ( 1.7.7 )
+
+        - advanced font support
+        - base snippets: https://www.npmjs.com/package/fontkit
 
     validator ( 9.4.0 )
 
@@ -174,7 +216,7 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 
         - connect to Square's API
         - base snippets: https://www.npmjs.com/package/square-connect
-        - API Documents: https://docs.connect.squareup.com/
+        - Square API Documents: https://docs.connect.squareup.com/
 
 
 
@@ -183,15 +225,6 @@ A note to self regarding ANYTHING related to payment processing for the site's s
         - simple PayPal integration
         - base snippets: https://www.npmjs.com/package/paypal-checkout
         - API documents: https://developer.paypal.com/
-
-
-
-    passport ( 0.4.0 )
-
-        - user authentication
-        - base snippets: https://www.npmjs.com/package/passport
-        - API documents: http://www.passportjs.org/docs/
-        - better API docs: https://github.com/jwalton/passport-api-docs
 
 
 
