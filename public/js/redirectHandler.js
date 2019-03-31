@@ -1,5 +1,5 @@
 /**
- * public/redirectHandler.js
+ * public/js/redirectHandler.js
  *
  * manually redirect if Wix doesn't catch the 301 from the old
  * domain, fauxcillashstudio.com ( has happened a few times )
