@@ -306,7 +306,7 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 - [x] 301 redirect for `fauxcillashstudio.com` to `fauxcil.com`
 - [ ] 301 redirect for subpages on old wix domain to `fauxcil.com`
 - [x] Logo
-- [ ] Favicon
+- [x] Favicon
 - [ ] Optimize background image + Lazy Load
 - [ ] Redisgn the site
     - [ ] Homepage
