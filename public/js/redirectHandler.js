@@ -15,6 +15,7 @@ const doWork = () => {
     if (baseUrl === 'https://www.fauxcillashstudio.com') {
         try {
             console.log('Opps, Wix didn\'t handle the 301. Redirecting...');
+            //window.location.replace("https://www.fauxcil.com");
             wixLocation.to('/');
             let msg = `Had to redirect from ${baseUrl}`;
             return msg;
