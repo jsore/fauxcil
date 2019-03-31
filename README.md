@@ -259,12 +259,15 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 <br>
 
 ### Wix TODO's
-- [x] Set DNS for `fauxcil.com`
+- [x] Set main DNS for `fauxcil.com`
     - [x] Propagation checks: `dig fauxcil.com -t ns`, `dig fauxcil.com +nssearch`
     - [x] Strip `fauxcil.com` from Volusion account
     - [x] Add `fauxcil.com` to the Wix domain list
     - [x] Set Wix's NS to be authoritative for `fauxcil.com`
-    - [ ] ~~Update MX and remaining records for `fauxcil.com` ~~ shouldn't be required
+- [ ] MX records
+    - [ ] Update DNS for `fauxcil.com` <strong>ORuse Wix ( `@fauxcil.com` ) email</strong>
+        - `fauxcillashstudio.com   mx5.biz.mail.yahoo.com  10`
+        - `fauxcillashstudio.com   mx1.biz.mail.yahoo.com  20`
 - [ ] ~~Rebuild site with proper name, details~~ New site costs money
 - [x] Assign `fauxcil.com` as main domain for new site
 - [x] 301 redirect for `fauxcillashstudio.com` to `fauxcil.com`
@@ -314,10 +317,8 @@ A note to self regarding ANYTHING related to payment processing for the site's s
     - [ ] change the media preview from the old logo
     - [ ] Confirm ownership of the website ( 'property' ) in the Search Console
         - ( https://support.google.com/webmasters/answer/9008080 )
-    - [ ] Prove ownership of the property
-    - [ ] Add Fauxcil property to Google Search Console
         - ( https://support.google.com/webmasters/answer/34592 )
-    - [ ] Submit sitemap
+    - [ ] After proving ownership, submit sitemap ( from Google Search Console hom page )
     - [x] Remove `Beleza Salon inside ...` from title of physical property within Google's search results
     - 
 - [ ] Yelp: update website link from `fauxcillashroom.wix.com/beauty`
