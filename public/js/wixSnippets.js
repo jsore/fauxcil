@@ -2,11 +2,124 @@
  * public/js/wixSnippets.js
  *
  * my research on dealing with Wix's environment
+ *
+ * https://support.wix.com/en/wix-code/advanced
  */
 
+/*==============================
+=            non-JS            =
+==============================*/
+/*
+
+enable and create custom member signup forms
+
+https://support.wix.com/en/article/wix-code-enabling-custom-site-registration
+
+    - create a members only page
+      (https://support.wix.com/en/article/creating-members-only-pages-596999)
+    - in the wix page editor, add a lightbox
+    - create the form
+      (support.wix.com/en/article/wix-code-tutorial-creating-a-custom-registration-form-with-code)
+    - Enable custom signup settings:
+        - Click Menus & Pages﻿ on the left side of the Editor.
+        - Hover over any of your members-only pages and click the Show More icon﻿
+          (this affects all members pages)
+        - Click Settings >> Permissions tab
+        - Select Members Only.
+        - Click Member Signup Settings.
+        - Click Enable custom signup.
+        - Click the toggle to enable custom signup settings.
+        - For What does it link to, click Choose a lightbox.
+        - In the dropdown, select the lightbox with your custom signup form.
+        - Click Done and Save.
+
+
+
+
+wix database model planning
+
+https://support.wix.com/en/widget/cb6480f3-768b-4737-ab8f-10fe2e4fa2ab/article/6323fef0-3d2a-4859-821a-2efe500b4c58
+
+
+
+
+member contacts
+
+https://support.wix.com/en/article/about-your-contact-list
+https://www.wix.com/code/reference/wix-crm-backend.html
+
+
+
+
+
+*/
 /*===================================
 =            wix modules            =
 ===================================*/
+
+/*----------  web modules (backend code)  ----------*/
+    /*
+    - backend code on wix = 'Web Modules'
+    - anything that needs to run server side should be a web module
+    - importing server side code to client side = CMLHttpRequest to invoke backend func
+    - example usage: hitting a 3rd party API to do something for your user
+    - web modules can be imported to other backend scripts too
+    - web module files must have a .jsw extension
+    */
+
+
+    /*----------  basic exporting backend functions  ----------*/
+
+    /**
+     * web modules always return a Promise that resolves to a value
+     */
+    // backend file aModule.jsw
+    export function multiply(factor1, factor2) {
+        return factor1 * factor2;
+    }
+
+    // frontend file
+    import {multiply} from 'backend/aModule';
+    multiply(4,5).then(function(product) {
+        console.log(product);
+        // Logs: 20
+    });
+
+
+    /*----------  hitting 3rd party APIs  ----------*/
+
+    /**
+     * backend/sendEmail.jsw
+     *
+     * web module for users to send email from 3rd party provider
+     */
+    // wix-fetch is the API we provide to make https calls in the backend
+    import {fetch} from 'wix-fetch';
+    const API_KEY = '3rd-party-API-key';
+    export function sendEmail (address, subject, body) {
+        return fetch('https://apiaddress' + API_KEY, {
+            method: 'post',
+            body: JSON.stringify({address, subject, body})
+        }).then(function(response) {
+            if (/* handle response.status */) {
+                return response.text();
+            } /* else error */
+        });
+    }
+
+    /**
+     * public/someFile.js
+     */
+    import {sendEmail} from 'backend/sendEmail.jsw';
+    export function sendButton_onClick(event) {
+        sendEmail(
+            $w("#addressInput").value,
+            $w("#subjectInput").value,
+            $w("#bodyInput").value).then(function() {
+                console.log("email was sent");
+            }
+        );
+    }
 
 /*----------  wrapper for mobile device-only code  ----------*/
 
@@ -51,6 +164,40 @@
             }
         }
     }
+
+
+/*----------  input validation with $w().onCustomValidation()  ----------*/
+
+/**
+ * @value
+ *     - value of element to validate
+ *
+ * @reject
+ *     - callback to call to invalidate an elm
+ *
+ * @valid
+ *     - property indicating if elm value is valid
+ *
+ * @validity
+ *     - property returning ValidityState Obj of why elm is invalid
+ *
+ * @validationMessage
+ *     - property returns message why elm is invalid
+ *
+ * @resetValidityIndication()
+ *     - clear visual cue of elm being invalid
+ *
+ * @updateValidityIndication()
+ *     - update visual cue signifying if elm is invalid based on current validity state
+ */
+$w.onReady(function () {
+    $w("#textInput1").onCustomValidation((value, reject) => {
+        /** reject if value doesn't end with wix.com */
+        if( !value.endsWith("@wix.com") ) {
+            reject("Email address must be a wix.com address.");
+        }
+    });
+});
 
 
 /*========================================
@@ -153,5 +300,17 @@
     });
 
 
-
-
+// try/catch for error handling
+/*
+    import wixData from 'wix-data';
+    
+    $w.onReady( async function () { 
+      try {
+        const results = await wixData.query("myCollection").find(); 
+        $w("#table1").rows = results.items;
+      }
+      catch(error) {
+        // handle the error here
+      }
+    } );
+*/
