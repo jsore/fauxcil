@@ -308,6 +308,7 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 - [x] Logo
 - [x] Favicon
 - [ ] Optimize background image + Lazy Load
+- [ ] sitemap ( https://mysite.com/sitemap.xml )
 - [ ] Redisgn the site
     - [ ] Homepage
     - [ ] About us
@@ -316,6 +317,7 @@ A note to self regarding ANYTHING related to payment processing for the site's s
     - [ ] Gallery
     - [ ] Training
     - [ ] Leasing
+    - [ ] subpages for people who lease space from Fauxcil
     - [ ] Update the site's Title ( should be `Fauxcil` not `beauty` )
     - [ ] Set all pages to cache their content
     - [ ] SEO: Titles, descriptions ( meta tags ) need to be filled out for all pages
@@ -344,6 +346,15 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 - [ ] npm package research, document possible modules I want to use
 - [ ] User authentication for access to store shopping cart, payments
 - [ ] User authentication training, studio space lease opportunities
+- [ ] ...or no user auth and just do gues checkouts?
+- [ ] Lock access to web modules I create down to appropriate site users
+- [ ] Site developer login
+- [ ] Site admin login
+    - [ ] add product to store
+    - [ ] edit product prices
+    - [ ] view orders
+    - [ ] view booking calendar
+    - [ ] view leasing contact requests
 
 ### Google & other misc TODO's
 - [ ] Google searches for `fauxcil lash studio`:
