@@ -354,6 +354,12 @@ A note to self regarding ANYTHING related to payment processing for the site's s
 - [ ] 301 redirect for subpages on old wix domain to `fauxcil.com`
 - [x] Logo
 - [x] Favicon
+- [ ] Social links
+    - https://www.instagram.com/explore/locations/1015276358/fauxcil-lash-studio
+    - https://www.facebook.com/Fauxcillashroom/
+    - fauxcillashroom@yahoo.com
+    - 682-365-3097
+    - 6204 S Cooper St #120, Arlington TX 76001
 - [ ] Optimize background image + Lazy Load
 - [ ] sitemap ( https://mysite.com/sitemap.xml )
 - [ ] Redisgn the site
