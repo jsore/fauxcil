@@ -74,45 +74,47 @@ I can **not** attest to the reliability of their modules or npm compatibility at
 
 ### Artboards - Site Styles
 
-- <strong>Home Page - Black and White Accented</strong>
+❤ = My Favorites
 
-[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.23.17%20PM.png|alt=option1]]
+- <strong>Home Page - Black and White Accented</strong> ❤
+
+![option1](https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.23.17%20PM.png)
 
 <br>
 
-- <strong>Home Page - Black and White Bars</strong>
+- <strong>Home Page - Black and White Bars</strong> ❤
 
-[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.23.33%20PM.png|alt=option2]]
+![option2](https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.23.33%20PM.png)
 
 <br>
 
 - <strong>Home Page - Minimal Black and White With Accented Footer</strong>
 
-[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.31.44%20PM.png|alt=option3]]
+![option3](https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.31.44%20PM.png)
 
 <br>
 
 - <strong>Home Page - Minimal Black and White</strong>
 
-[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.31.59%20PM.png|alt=option4]]
+![option4](https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.31.59%20PM.png)
 
 <br>
 
-- <strong>Home Page - White With Light Blue Accents</strong>
+- <strong>Home Page - White With Light Blue Accents</strong> ❤
 
-[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.32.12%20PM.png|alt=option5]]
+![option5](https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.32.12%20PM.png)
 
 <br>
 
 - <strong>Home Page - Light Blue With White Text and Accents</strong>
 
-[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.32.28%20PM.png|alt=option6]]
+![option6](https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.32.28%20PM.png)
 
 <br>
 
 - <strong>Home Page - White With Light Green Accents</strong>
 
-[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.32.40%20PM.png|alt=option7]]
+![option7](https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.32.40%20PM.png)
 
 <br>
 
