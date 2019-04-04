@@ -11,6 +11,7 @@
 ==============================*/
 /*
 
+~~~~~~~~~~~~~~~~~~~~~~
 enable and create custom member signup forms
 
 https://support.wix.com/en/article/wix-code-enabling-custom-site-registration
@@ -35,14 +36,121 @@ https://support.wix.com/en/article/wix-code-enabling-custom-site-registration
 
 
 
-
+~~~~~~~~~~~~~~~~~~~~~~
 wix database model planning
 
 https://support.wix.com/en/widget/cb6480f3-768b-4737-ab8f-10fe2e4fa2ab/article/6323fef0-3d2a-4859-821a-2efe500b4c58
 
+    Considerations for Storing User Input
+    
+    If you want to have a form for your users to fill out, you will need to create a collection for storing the information they supply. Best practice is to have each form connect only to one collection, and then connect each user input element 
+        ( https://support.wix.com/en/article/working-with-user-input-elements-2499809 )
+    to a field in that collection. 
+
+    Also, make sure you give collections that will store user input the appropriate permissions 
+        ( https://support.wix.com/en/widget/cb6480f3-768b-4737-ab8f-10fe2e4fa2ab/article/about-database-collection-permissions )
+    , so that your users can save their information.
 
 
 
+~~~~~~~~~~~~~~~~~~~~~~
+collection fields
+    https://support.wix.com/en/article/about-your-database-collection-fields
+
+    Field Name
+
+    The Field Name is the label you see at the top of the column in the Data Manager. The Field Name is also used in the connect panel for elements you can connect to a dataset in the Editor.
+
+    For example, when connecting a text element to a field from your collection, you use the Field Name in the Connect Text panel.
+
+    ﻿
+    ﻿
+    When you add a new field in the Data Manager, you specify the Field Name. You can change the Field Name after the field has been created, and all connections to that field will be updated. 
+    (Wix Code users only) Field Key
+    The Field Key is used when referring to the field in code using the Data API or Dataset API. 
+
+    For example, if you want to insert an item using the Data API, you use the Field Key.
+
+        wixData.insert("CollectionName", {"fieldKey": "value"});
+
+    When you add a new field in the Content Manager, the Field Key is created automatically based on the Field Name. You can specify your own field key, if you wish. 
+
+    Note:
+    You cannot change the Field Key once the field has been created.  
+
+
+
+
+    Field Type      Limitations
+
+    Reference       - Specify the desired item using the Data Manager interface 
+                        (select from the list or paste a value).
+                    - Must be an item that is stored in the referenced collection. 
+
+    Text            - None
+
+    Image           - .jpg, .png, and .gif. 
+                    - You can also add a link to an image. 
+                    - You can connect image elements, page backgrounds, repeater item backgrounds, and column backgrounds (in strips) to Image fields.
+                    - Max size: 15 MB
+
+    Boolean         - Select the value using the Data Manager interface.
+
+    Number          - (negative) -2147483647 to 2147483647
+
+    Date and Time   - Select the date and time using the Data Manager interface. 
+
+    Rich Text       - None
+
+    URL             - http://, https://, ftp://, mailto:, sms:, tel:
+                    - Web addresses must be in the format http:// or https://. 
+                    - Entries that start with www. are converted to http://.
+
+    Document        - doc & .docx, .xls & .xlsx, .ppt & .pptx, .odt, .odp, and .pdf. 
+                    - You cannot upload password protected documents.
+                    - You can connect elements to Document fields to allow your visitors to upload files to your collection and download files from your collection.
+
+    Video
+
+    Media Gallery   - .jpg, .png, and .gif. 
+                    - You can connect a Gallery element to an Media Gallery field.
+                    - Max size of each image: 15 MB
+
+    Time            - HH: Hours in 24-hour format (16:00, not 4:00)
+                    - mm: minutes
+                    - ss: seconds (optional)
+                    - SSS: milliseconds (optional)
+
+
+    
+
+    https://support.wix.com/en/article/working-with-user-input-elements-9560341
+
+    The element you choose mostly depends on the type of information you want to capture or display, and whether you want to give your visitor options to choose from. You'll need to add a submit button to your site to store the data your users enter.
+
+
+    Creating a Form with User Input Elements:
+    https://support.wix.com/en/article/creating-a-form-with-user-input-elements
+
+
+~~~~~~~~~~~~~~~~~~~~~~
+permission presets
+
+Type                            Read        Create          Update
+Site Content                    Anyone      Admin           Admin
+Form Submission                 Admin       Anyone          Admin
+Member-Generated Content        Anyone      Site member     Site member author
+Members-Only-Content            Site member Admin           Admin
+Members-Only Form Submission    Admin       Site member     Admin
+Private Data                    Admin       Admin           Admin
+
+
+    Wix Code users: Authorization Suppression
+
+    When interacting with your collections using the Data API, you can choose to bypass the permissions model in certain cases. The optional WixDataOptions argument can be sent to the API function call with the suppressAuth property set to true. This will cause the function to run without checking if the current user has the correct permissions. You can only bypass permissions when making API calls from backend code. Client-side API calls will always run permission checks, regardless of what options are passed
+
+
+~~~~~~~~~~~~~~~~~~~~~~
 member contacts
 
 https://support.wix.com/en/article/about-your-contact-list
