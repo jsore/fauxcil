@@ -116,18 +116,6 @@ I can **not** attest to the reliability of their modules or npm compatibility at
 
 <br>
 
-- <strong></strong>
-
-<br>
-
-- <strong></strong>
-
-
-public/assets/artboards/Screen Shot 2019-04-03 at 10.23.17 PM.png
-
-https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.23.17%20PM.png
-
-
 
 ### Manual redirect module
 
