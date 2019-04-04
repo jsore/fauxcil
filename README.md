@@ -72,6 +72,63 @@ I can **not** attest to the reliability of their modules or npm compatibility at
 
 <br>
 
+### Artboards - Site Styles
+
+- <strong>Home Page - Black and White Accented</strong>
+
+[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.23.17%20PM.png|alt=option1]]
+
+<br>
+
+- <strong>Home Page - Black and White Bars</strong>
+
+[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.23.33%20PM.png|alt=option2]]
+
+<br>
+
+- <strong>Home Page - Minimal Black and White With Accented Footer</strong>
+
+[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.31.44%20PM.png|alt=option3]]
+
+<br>
+
+- <strong>Home Page - Minimal Black and White</strong>
+
+[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.31.59%20PM.png|alt=option4]]
+
+<br>
+
+- <strong>Home Page - White With Light Blue Accents</strong>
+
+[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.32.12%20PM.png|alt=option5]]
+
+<br>
+
+- <strong>Home Page - Light Blue With White Text and Accents</strong>
+
+[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.32.28%20PM.png|alt=option6]]
+
+<br>
+
+- <strong>Home Page - White With Light Green Accents</strong>
+
+[[https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.32.40%20PM.png|alt=option7]]
+
+<br>
+
+- <strong></strong>
+
+<br>
+
+- <strong></strong>
+
+
+public/assets/artboards/Screen Shot 2019-04-03 at 10.23.17 PM.png
+
+https://github.com/jsore/fauxcil/blob/master/public/assets/artboards/Screen%20Shot%202019-04-03%20at%2010.23.17%20PM.png
+
+
+
 ### Manual redirect module
 
 `public/wixFunctions.js`
