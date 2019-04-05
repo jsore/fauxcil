@@ -9,6 +9,45 @@
 /*==============================
 =            non-JS            =
 ==============================*/
+
+
+
+For a regular desktop, use the width of 1200 pixels, 2) for an iPad the format is 768 x 1024 pixels and 3) for an iPhone 5 the format is 320 x 568 pixels.
+
+
+First we will define our so called ‘breakpoints’ in our CSS file. These breakpoints target the screen resolution, and more specifically the width.
+
+We could instruct our web site to act as follows:
+
+If the end user’s screen is smaller than 480 pixels show the smartphone layout
+If the screen is larger than 480 pixels but smaller than 1024 pixels show the tablet layout
+If the screen is larger than 1024 show the regular desktop layout
+
+
+Screen width    Smallest screen height  In use worldwide
+1366 px         768 px                  35%
+1920 px         1080 px                 20%
+1280 px         800 px                  11%
+1024 px         768 px                  3%
+1360 px         768 px                  2%
+1440 px         900 px                  6%
+1600 px         900 px                  6%
+1680 px         1050 px                 3%
+2560 px and up  1440 px                 1%
+
+
+CSS Breakpoints: where & how many?
+You don’t need to write mediaqueries for every possible screen resolution. To keep things simple you could target four groups:
+
+smaller than or equal to 768 px (smartphones)
+larger than 768 px (small devices, tablets)
+larger than 992 px (medium devices)
+larger than 1200px (large devices)
+Those are the breakpoints as used by the very popular Twitter Bootstrap framework.
+
+
+
+
 /*
 
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -158,6 +197,13 @@ https://www.wix.com/code/reference/wix-crm-backend.html
 
 
 
+
+
+~~~~~~~~
+accepting payments
+
+https://support.wix.com/en/article/wix-code-tutorial-processing-payments
+https://support.wix.com/en/article/wix-code-tutorial-using-the-wix-pay-api-to-collect-payments-for-products-in-a-database-collection
 
 
 */
